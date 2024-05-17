@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contant Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ================================================
+        Nav bar
+    =================================================== -->
+  <div id="wrapper">
+        <!-- =========================================
+                   NAV BAR
+        =========================================== -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Products.html">PRODUCTS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="Aboutus.html">ABOUT US</a></li> 
+            </ul>
+             <ul>
+               <li><a href="index.html"> logo</a></li>
+               <li><a href="index.html"> Home</a></li>
+               <li class="hideOnMobile" ><a href="Products.html">PRODUCTS</a></li>
+               <li class="hideOnMobile" ><a href="Aboutus.html">ABOUT US</a></li>
+               <li class="hideOnMobile" ><a href="contactus.html">CONTACT US</a></li>
+               <li class="menu-button" onclick= showSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+           </ul>
+         </nav>
+
+      
+    <!-- ================================================
+                 Contact us From
+    =================================================== -->
+   <!-- onsubmit="sendEmail(); reset(); return flase;" -->
+      
+     <section class="contact">
+      <div class="content">
+           <h2>Contact Us</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquid repudiandae neque, dicta nemo 
+             quo saepe hic nihil repellendus reprehenderit nesciunt alias quam ipsam iusto soluta fuga eaque? Incidunt,
+             excepturi!</p>       
+      </div>
+      <div class="container">
+          <div class="contactInfo" id="contactInfo-1">
+             <div class="box">
+              <div class="icon"><i class="fa-solid fa-address-book" ></i> </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>152 Crownpoint rd, Glasgow G40 2UJ, United Kingdom</p>
+              </div>
+             </div>
+             <div class="box">
+              <div class="icon"> <i class="fa-solid fa-envelopes-bulk"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>Louiswilliam1976@outlook.com</p>
+              </div>
+             </div>
+             <div class="box">
+              <div class="icon"><i class="fa-solid fa-user"></i> </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>+447400414739</p>
+              </div>
+             </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name=""   required="required">
+                <span>Full Name</span>
+              </div>
+
+              <div class="inputBox">
+                <input type="email" name=""  required="required">
+                <span>Email</span>
+              </div>
+
+              <div class="inputBox">
+                <input type="number" name="" required="required">
+                <span>Number</span>
+              </div>
+              
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Type your Message...</span>
+              </div>
+              
+              <div class="inputBox">
+                  <input type="submit" name=""  value="Send">
+              </div>
+
+            </form>
+          </div>
+      </div>
+     </section>
+
+
+
+
+   <!-- ================================================
+                        footer
+   =================================================== -->
+    <footer> 
+       <div class="footer">
+         <div class="containers">
+             <div class="row">
+                 <div class="footer-col">
+                   <div class="footer-col">
+                        <h4>COMAPNY</h4>
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="Products.html">Products</a></li>
+                            <li><a href="Aboutus.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact US</a></li>
+                            <!-- <li><a href="contactus.html">contact us</a></li> -->
+                        </ul>
+                    </div>
+              
+                   
+                    <div class="footer-col">
+                        <h4>Contact US</h4>
+                        <ul>
+                          <li><a>Mail</a></li>
+                          <li><a>Whatsapp</a></li>
+                          <li><a>Address: 152 Crown Point Rd, Glasgow G40 2UJ , United Kingdom.</a></li>
+                      </ul>
+                    </div>
+              </div>
+         </div>
+     </div>
+    </footer> 
+   
+   
+   
+     </div>
+    </div>
+
+</div>
+</div>
+    
+     
+
+
+      <!-- ================================================
+                         java script
+       =================================================== -->
+  
+  
+      <script src="script.js">
+        function showSlidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display ='flex';
+         }
+       function hideSidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display ='none';
+       }
+
+    // function sendEmail(){
+    //     Email.send({
+    //     Host : "smtp.gmail.com",
+    //     Username : "ranveersharma402@gmail.com",
+    //     Password : "gatecse5665@",
+    //     To : 'kulvinderthakur121@gmail.com',
+    //     From : document.getElementById("email").value,
+    //     Subject : "New Contact Form Enquiry",
+    //     Body : "And this is the body"
+    //     }).then(
+    //     message => alert(message)
+    //     );
+    //  }
+      </script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+</body>
+</html>
